@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <title>Three Dee</title>
     <style>
-			body {
-        margin: 0;
+      #container canvas{
+        border: 1px solid black;
       }
-      canvas {
-        width: 100px;
-        height: 100px;
-      }
-		</style>
+    </style>
   </head>
   <body>
-    <div id="container">
-      <canvas></canvas>
+    <div>
+      <label for="x-slider">Rotate Cube X</label>
+      <input type="range" min="0", max="100" id="x-slider" value="0" step="any">
     </div>
+    <div>
+      <label for="y-slider">Rotate Cube Y</label>
+      <input type="range" min="0", max="100" id="y-slider" value="0" step="any">
+    </div>
+    <div id="container"></div>
   </body>
 </html>
